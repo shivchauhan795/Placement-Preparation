@@ -2,3 +2,5 @@ https://leetcode.com/problems/unique-number-of-occurrences/discussion/
 https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
 https://www.codingninjas.com/codestudio/problems/triplets-with-given-sum_893028?source=youtube&campaign=LoveBabbar_Codestudiovideo1&utm_source=youtube&utm_medium=affiliate&utm_campaign=LoveBabbar_Codestudiovideo1&leftPanelTab=3
 https://www.codingninjas.com/codestudio/problems/sort-0-1-2_631055?source=youtube&campaign=LoveBabbar_Codestudiovideo1&utm_source=youtube&utm_medium=affiliate&utm_campaign=LoveBabbar_Codestudiovideo1
+https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/solutions/
+https://leetcode.com/problems/rotate-image/description/
