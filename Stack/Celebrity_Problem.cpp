@@ -19,6 +19,13 @@ Conditions:
 
 */
 
+
+/*
+    Approach:
+    1.  for every element, check if row -> all are 0's && if col -> all 1's except diagonal.    T.C -> O(n^2)   S.C -> O(1)
+    2.  using stack. Put all elements in stack i.e, 0,1,2 in this case and follow the steps as written as comments with the code.   T.C -> O(n)     S.C -> O(n)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
