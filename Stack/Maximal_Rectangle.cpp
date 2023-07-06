@@ -60,18 +60,28 @@ vector<int> nextSmallerElement(vector<int> heights, int n){
         int n = matrix.size();  // no of rows
         int m = matrix[0].size();   // no of cols
 
-        int area = largestArea(matrix[0], m);
+        vector<vector<int>> intMatrix(n , vector<int> (m, 0));
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(matrix[i][j] == '0')
+                    intMatrix[i][j] = 0;
+                else
+                    intMatrix[i][j] = 1;
+            }
+        }
+
+        int area = largestArea(intMatrix[0], m);
 
         for(int i = 1; i < n; i++){
             for(int j = 0; j < m; j++){
-                if(matrix[i][j] != 0){
-                    matrix[i][j] = matrix[i][j] + matrix[i-1][j];
+                if(intMatrix[i][j] != 0){
+                    intMatrix[i][j] = intMatrix[i][j] + intMatrix[i-1][j];
                 }
                 else{
-                    matrix[i][j] = 0;
+                    intMatrix[i][j] = 0;
                 }
             }
-            area = max(area, largestArea(matrix[i], m));
+            area = max(area, largestArea(intMatrix[i], m));
         }
         return area;
     }
